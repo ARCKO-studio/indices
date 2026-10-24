@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suppression de compte INDICES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;700;800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap">
+<style>
+  /* Document de lecture : une colonne étroite, titres en grotesque, texte en serif de lecture. */
+  :root {
+    --bg: #fbfbfd;
+    --fg: #1d2030;
+    --muted: #5b6075;
+    --line: #dfe2ec;
+    --accent: #3d4fd6;
+    --soft: #eef0fb;
+    --font-head: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-body: "Literata", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161f; --fg: #e8eaf4; --muted: #a0a5bd; --line: #2c3042; --accent: #8e9bff; --soft: #1d2030;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161f; --fg: #e8eaf4; --muted: #a0a5bd; --line: #2c3042; --accent: #8e9bff; --soft: #1d2030;
+    color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 17px; line-height: 1.65; padding-inline: 16px; padding-block: 40px 72px; }
+  main { max-width: 42rem; margin-inline: auto; }
+  h1, h2 { font-family: var(--font-head); text-wrap: balance; line-height: 1.2; }
+  h1 { font-size: clamp(2rem, 6vw, 2.75rem); font-weight: 800; margin: 0 0 8px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.3rem; font-weight: 700; margin: 2.4rem 0 0.5rem; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.4rem; }
+  .meta { font-family: var(--font-head); color: var(--muted); font-size: 0.95rem; margin: 0 0 2rem; }
+  .lead { font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 16px; margin-bottom: 2rem; }
+  .table-wrap { overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--line); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--font-head); font-weight: 700; background: var(--soft); }
+  tr:last-child td { border-bottom: 0; }
+  strong { font-weight: 600; }
+  .contact { font-family: var(--font-head); font-weight: 700; user-select: all; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+<style>
+  body { margin: 0; }
+  nav.pages { font-family: var(--font-head); font-size: 0.95rem; display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0 0 2rem; }
+  nav.pages a { color: var(--muted); text-decoration: none; }
+  nav.pages a[aria-current="page"] { color: var(--fg); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+  footer { font-family: var(--font-head); font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1rem; }
+  footer a { color: var(--muted); }
+  table { min-width: 0; }
+</style>
+</head>
+<body>
+<main>
+<nav class="pages" aria-label="Pages légales d'INDICES"><a href="regles-de-confidentialite.html">Confidentialité</a> <a href="cgu.html">Conditions d'utilisation</a> <a href="mentions-legales.html">Mentions légales</a> <a href="suppression-compte.html" aria-current="page">Suppression du compte</a></nav>
+
+  <h1>Supprimer mon compte INDICES</h1>
+  <p class="meta">Application Android INDICES, éditée par ARCKO Studio. Dernière mise à jour : 24 octobre 2026.</p>
+  <p class="lead">Tu peux demander à tout moment la suppression de ton compte INDICES et des données qui y sont rattachées. Cette page explique comment faire et ce qui est supprimé.</p>
+
+  <h2>Comment demander la suppression</h2>
+  <ol>
+    <li>Envoie un e-mail à <span class="contact">arckocontactpro@gmail.com</span> <strong>depuis l'adresse e-mail du compte Google</strong> que tu utilises dans INDICES.</li>
+    <li>Écris comme objet : <strong>« Suppression de mon compte INDICES »</strong>. Tu peux ajouter ton pseudo dans le message pour que nous retrouvions ton compte plus vite.</li>
+    <li>Nous te confirmons la suppression par e-mail. Elle est effectuée <strong>sous 30 jours</strong>.</li>
+  </ol>
+  <p><a href="mailto:arckocontactpro@gmail.com?subject=Suppression%20de%20mon%20compte%20INDICES">Écrire la demande maintenant</a></p>
+
+  <h2>Ce qui est supprimé</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Donnée</th><th>Ce qui se passe</th></tr></thead>
+    <tbody>
+      <tr><td>Compte de connexion (identifiant, adresse e-mail et nom de ton compte Google, via Firebase Authentication)</td><td>Supprimé.</td></tr>
+      <tr><td>Pseudo, avatar et code ami</td><td>Supprimés.</td></tr>
+      <tr><td>Meilleurs scores par catégorie dans les classements</td><td>Supprimés : tu disparais des classements.</td></tr>
+      <tr><td>Amitiés, défis de 24 h et statistiques de victoires, défaites et égalités</td><td>Supprimés ou rendus anonymes.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Ce qui reste sur ton téléphone</h2>
+  <p>Ta progression (niveau, XP, badges, records, série de jours) et tes réglages sont enregistrés uniquement sur ton téléphone. Ils ne sont jamais envoyés à ARCKO Studio. Pour les effacer, désinstalle l'application ou vide ses données dans les réglages Android (Applications, INDICES, Stockage, Effacer les données).</p>
+
+  <h2>Tu veux seulement te déconnecter ?</h2>
+  <p>Tu peux te déconnecter dans l'onglet Profil de l'application, ou retirer l'accès d'INDICES à ton compte Google depuis <a href="https://myaccount.google.com/connections" target="_blank" rel="noopener">myaccount.google.com/connections</a>. Ces deux gestes ne suppriment pas les données du classement : pour cela, envoie la demande décrite plus haut.</p>
+
+  <h2>Pour en savoir plus</h2>
+  <p>Le détail des données utilisées est dans la <a href="regles-de-confidentialite.html">politique de confidentialité</a>. Si tu estimes que tes droits ne sont pas respectés, tu peux saisir la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>).</p>
+
+<footer>ARCKO Studio, éditeur d'INDICES. Contact : <span class="contact">arckocontactpro@gmail.com</span></footer>
+</main>
+</body>
+</html>
